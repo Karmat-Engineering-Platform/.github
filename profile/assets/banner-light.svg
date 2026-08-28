@@ -1,0 +1,277 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Karmat Engineering Limited — AI products, and the models behind them.">
+  <style>
+    .bg { fill: #ffffff; }
+    .edge { stroke: #0a0a0a; stroke-width: 1; opacity: .07; animation: breathe 7s ease-in-out infinite; }
+    .node { fill: #0a0a0a; opacity: .16; animation: breathe 6s ease-in-out infinite; }
+    @keyframes breathe { 0%,100% { opacity: .05 } 50% { opacity: .2 } }
+
+    .mark { fill: #0a0a0a; font: 600 35px Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; letter-spacing: -.9px; }
+    .rule { stroke: #e4e4e7; stroke-width: 1; }
+    .tag  { fill: #71717a; font: 400 20px Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; }
+    .caret { fill: #0a0a0a; animation: blink 1.05s steps(1) infinite; }
+    @keyframes blink { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
+
+    .chip rect { fill: #fafafa; stroke: #e4e4e7; stroke-width: 1; }
+    .chip .dot { fill: #0a0a0a; }
+    .chip-name  { fill: #0a0a0a;    font: 500 12.5px Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; }
+    .chip-state { fill: #71717a; font: 400 11px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; letter-spacing: .6px; }
+    .chip { animation: fadeUp .7s cubic-bezier(.16,1,.3,1) backwards; }
+    @keyframes fadeUp { from { opacity: 0 } to { opacity: 1 } }
+
+    .ring { fill: none; stroke: #0a0a0a; stroke-width: 1; opacity: .18; animation: pulse 4s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity: .22 } 50% { opacity: .06 } }
+
+    .streak { fill: #0a0a0a; opacity: .22; animation: dash 2.2s ease-in-out infinite; }
+    @keyframes dash { 0%,100% { opacity: .1 } 50% { opacity: .45 } }
+
+    .face-top   { fill: #0a0a0a; opacity: .55; }
+    .face-side  { fill: #0a0a0a; opacity: .75; }
+    .face-front { fill: #0a0a0a; }
+    .cube { animation: bob 5s ease-in-out infinite; }
+    @keyframes bob { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-8px) } }
+
+    .cube-label { fill: #ffffff; font: 700 34px Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; text-anchor: middle; letter-spacing: -1px; opacity: 0; animation: cycle 9s ease-in-out infinite; }
+    .c0 { animation-delay: 0s } .c1 { animation-delay: 3s } .c2 { animation-delay: 6s }
+    @keyframes cycle { 0% {opacity:0} 4% {opacity:1} 30% {opacity:1} 34%,100% {opacity:0} }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .chip { opacity: 1; }
+      .c0 { opacity: 1; }
+    }
+  </style>
+
+  <rect class="bg" width="1200" height="340"/>
+
+  <g>
+    <line x1="775" y1="40" x2="689" y2="139" class="edge" style="animation-delay:0.0s"/>
+    <line x1="775" y1="40" x2="761" y2="131" class="edge" style="animation-delay:0.5s"/>
+    <line x1="775" y1="40" x2="655" y2="37" class="edge" style="animation-delay:1.0s"/>
+    <line x1="775" y1="40" x2="809" y2="148" class="edge" style="animation-delay:1.5s"/>
+    <line x1="775" y1="40" x2="866" y2="106" class="edge" style="animation-delay:2.0s"/>
+    <line x1="775" y1="40" x2="693" y2="157" class="edge" style="animation-delay:2.5s"/>
+    <line x1="775" y1="40" x2="703" y2="98" class="edge" style="animation-delay:3.0s"/>
+    <line x1="775" y1="40" x2="804" y2="34" class="edge" style="animation-delay:3.5s"/>
+    <line x1="101" y1="46" x2="164" y2="86" class="edge" style="animation-delay:4.0s"/>
+    <line x1="101" y1="46" x2="187" y2="54" class="edge" style="animation-delay:0.0s"/>
+    <line x1="101" y1="46" x2="89" y2="81" class="edge" style="animation-delay:0.5s"/>
+    <line x1="101" y1="46" x2="46" y2="158" class="edge" style="animation-delay:1.0s"/>
+    <line x1="101" y1="46" x2="215" y2="54" class="edge" style="animation-delay:1.5s"/>
+    <line x1="101" y1="46" x2="25" y2="145" class="edge" style="animation-delay:2.0s"/>
+    <line x1="512" y1="269" x2="378" y2="266" class="edge" style="animation-delay:2.5s"/>
+    <line x1="512" y1="269" x2="629" y2="284" class="edge" style="animation-delay:3.0s"/>
+    <line x1="512" y1="269" x2="505" y2="248" class="edge" style="animation-delay:3.5s"/>
+    <line x1="512" y1="269" x2="570" y2="220" class="edge" style="animation-delay:4.0s"/>
+    <line x1="512" y1="269" x2="468" y2="221" class="edge" style="animation-delay:0.0s"/>
+    <line x1="512" y1="269" x2="474" y2="283" class="edge" style="animation-delay:0.5s"/>
+    <line x1="512" y1="269" x2="657" y2="287" class="edge" style="animation-delay:1.0s"/>
+    <line x1="512" y1="269" x2="436" y2="287" class="edge" style="animation-delay:1.5s"/>
+    <line x1="512" y1="269" x2="618" y2="206" class="edge" style="animation-delay:2.0s"/>
+    <line x1="164" y1="86" x2="187" y2="54" class="edge" style="animation-delay:2.5s"/>
+    <line x1="164" y1="86" x2="89" y2="81" class="edge" style="animation-delay:3.0s"/>
+    <line x1="164" y1="86" x2="46" y2="158" class="edge" style="animation-delay:3.5s"/>
+    <line x1="164" y1="86" x2="215" y2="54" class="edge" style="animation-delay:4.0s"/>
+    <line x1="164" y1="86" x2="140" y2="211" class="edge" style="animation-delay:0.0s"/>
+    <line x1="748" y1="306" x2="629" y2="284" class="edge" style="animation-delay:0.5s"/>
+    <line x1="748" y1="306" x2="827" y2="199" class="edge" style="animation-delay:1.0s"/>
+    <line x1="748" y1="306" x2="771" y2="320" class="edge" style="animation-delay:1.5s"/>
+    <line x1="748" y1="306" x2="657" y2="287" class="edge" style="animation-delay:2.0s"/>
+    <line x1="689" y1="139" x2="761" y2="131" class="edge" style="animation-delay:2.5s"/>
+    <line x1="689" y1="139" x2="655" y2="37" class="edge" style="animation-delay:3.0s"/>
+    <line x1="689" y1="139" x2="809" y2="148" class="edge" style="animation-delay:3.5s"/>
+    <line x1="689" y1="139" x2="827" y2="199" class="edge" style="animation-delay:4.0s"/>
+    <line x1="689" y1="139" x2="693" y2="157" class="edge" style="animation-delay:0.0s"/>
+    <line x1="689" y1="139" x2="570" y2="220" class="edge" style="animation-delay:0.5s"/>
+    <line x1="689" y1="139" x2="703" y2="98" class="edge" style="animation-delay:1.0s"/>
+    <line x1="689" y1="139" x2="618" y2="206" class="edge" style="animation-delay:1.5s"/>
+    <line x1="1152" y1="32" x2="1157" y2="54" class="edge" style="animation-delay:2.0s"/>
+    <line x1="1152" y1="32" x2="1131" y2="64" class="edge" style="animation-delay:2.5s"/>
+    <line x1="187" y1="54" x2="89" y2="81" class="edge" style="animation-delay:3.0s"/>
+    <line x1="187" y1="54" x2="215" y2="54" class="edge" style="animation-delay:3.5s"/>
+    <line x1="378" y1="266" x2="505" y2="248" class="edge" style="animation-delay:4.0s"/>
+    <line x1="378" y1="266" x2="468" y2="221" class="edge" style="animation-delay:0.0s"/>
+    <line x1="378" y1="266" x2="474" y2="283" class="edge" style="animation-delay:0.5s"/>
+    <line x1="378" y1="266" x2="436" y2="287" class="edge" style="animation-delay:1.0s"/>
+    <line x1="761" y1="131" x2="655" y2="37" class="edge" style="animation-delay:1.5s"/>
+    <line x1="761" y1="131" x2="809" y2="148" class="edge" style="animation-delay:2.0s"/>
+    <line x1="761" y1="131" x2="866" y2="106" class="edge" style="animation-delay:2.5s"/>
+    <line x1="761" y1="131" x2="827" y2="199" class="edge" style="animation-delay:3.0s"/>
+    <line x1="761" y1="131" x2="693" y2="157" class="edge" style="animation-delay:3.5s"/>
+    <line x1="761" y1="131" x2="703" y2="98" class="edge" style="animation-delay:4.0s"/>
+    <line x1="761" y1="131" x2="804" y2="34" class="edge" style="animation-delay:0.0s"/>
+    <line x1="655" y1="37" x2="693" y2="157" class="edge" style="animation-delay:0.5s"/>
+    <line x1="655" y1="37" x2="703" y2="98" class="edge" style="animation-delay:1.0s"/>
+    <line x1="655" y1="37" x2="804" y2="34" class="edge" style="animation-delay:1.5s"/>
+    <line x1="89" y1="81" x2="65" y2="221" class="edge" style="animation-delay:2.0s"/>
+    <line x1="89" y1="81" x2="46" y2="158" class="edge" style="animation-delay:2.5s"/>
+    <line x1="89" y1="81" x2="215" y2="54" class="edge" style="animation-delay:3.0s"/>
+    <line x1="89" y1="81" x2="25" y2="145" class="edge" style="animation-delay:3.5s"/>
+    <line x1="89" y1="81" x2="140" y2="211" class="edge" style="animation-delay:4.0s"/>
+    <line x1="809" y1="148" x2="866" y2="106" class="edge" style="animation-delay:0.0s"/>
+    <line x1="809" y1="148" x2="907" y2="192" class="edge" style="animation-delay:0.5s"/>
+    <line x1="809" y1="148" x2="827" y2="199" class="edge" style="animation-delay:1.0s"/>
+    <line x1="809" y1="148" x2="693" y2="157" class="edge" style="animation-delay:1.5s"/>
+    <line x1="809" y1="148" x2="703" y2="98" class="edge" style="animation-delay:2.0s"/>
+    <line x1="809" y1="148" x2="804" y2="34" class="edge" style="animation-delay:2.5s"/>
+    <line x1="629" y1="284" x2="505" y2="248" class="edge" style="animation-delay:3.0s"/>
+    <line x1="629" y1="284" x2="693" y2="157" class="edge" style="animation-delay:3.5s"/>
+    <line x1="629" y1="284" x2="570" y2="220" class="edge" style="animation-delay:4.0s"/>
+    <line x1="629" y1="284" x2="771" y2="320" class="edge" style="animation-delay:0.0s"/>
+    <line x1="629" y1="284" x2="657" y2="287" class="edge" style="animation-delay:0.5s"/>
+    <line x1="629" y1="284" x2="618" y2="206" class="edge" style="animation-delay:1.0s"/>
+    <line x1="866" y1="106" x2="907" y2="192" class="edge" style="animation-delay:1.5s"/>
+    <line x1="866" y1="106" x2="827" y2="199" class="edge" style="animation-delay:2.0s"/>
+    <line x1="866" y1="106" x2="804" y2="34" class="edge" style="animation-delay:2.5s"/>
+    <line x1="1157" y1="54" x2="1131" y2="64" class="edge" style="animation-delay:3.0s"/>
+    <line x1="505" y1="248" x2="570" y2="220" class="edge" style="animation-delay:3.5s"/>
+    <line x1="505" y1="248" x2="468" y2="221" class="edge" style="animation-delay:4.0s"/>
+    <line x1="505" y1="248" x2="474" y2="283" class="edge" style="animation-delay:0.0s"/>
+    <line x1="505" y1="248" x2="436" y2="287" class="edge" style="animation-delay:0.5s"/>
+    <line x1="505" y1="248" x2="618" y2="206" class="edge" style="animation-delay:1.0s"/>
+    <line x1="65" y1="221" x2="90" y2="231" class="edge" style="animation-delay:1.5s"/>
+    <line x1="65" y1="221" x2="46" y2="158" class="edge" style="animation-delay:2.0s"/>
+    <line x1="65" y1="221" x2="88" y2="252" class="edge" style="animation-delay:2.5s"/>
+    <line x1="65" y1="221" x2="25" y2="145" class="edge" style="animation-delay:3.0s"/>
+    <line x1="65" y1="221" x2="140" y2="211" class="edge" style="animation-delay:3.5s"/>
+    <line x1="907" y1="192" x2="827" y2="199" class="edge" style="animation-delay:4.0s"/>
+    <line x1="907" y1="192" x2="994" y2="305" class="edge" style="animation-delay:0.0s"/>
+    <line x1="907" y1="192" x2="970" y2="281" class="edge" style="animation-delay:0.5s"/>
+    <line x1="827" y1="199" x2="693" y2="157" class="edge" style="animation-delay:1.0s"/>
+    <line x1="827" y1="199" x2="771" y2="320" class="edge" style="animation-delay:1.5s"/>
+    <line x1="693" y1="157" x2="570" y2="220" class="edge" style="animation-delay:2.0s"/>
+    <line x1="693" y1="157" x2="657" y2="287" class="edge" style="animation-delay:2.5s"/>
+    <line x1="693" y1="157" x2="703" y2="98" class="edge" style="animation-delay:3.0s"/>
+    <line x1="693" y1="157" x2="618" y2="206" class="edge" style="animation-delay:3.5s"/>
+    <line x1="994" y1="305" x2="970" y2="281" class="edge" style="animation-delay:4.0s"/>
+    <line x1="994" y1="305" x2="1063" y2="255" class="edge" style="animation-delay:0.0s"/>
+    <line x1="570" y1="220" x2="468" y2="221" class="edge" style="animation-delay:0.5s"/>
+    <line x1="570" y1="220" x2="474" y2="283" class="edge" style="animation-delay:1.0s"/>
+    <line x1="570" y1="220" x2="657" y2="287" class="edge" style="animation-delay:1.5s"/>
+    <line x1="570" y1="220" x2="436" y2="287" class="edge" style="animation-delay:2.0s"/>
+    <line x1="570" y1="220" x2="618" y2="206" class="edge" style="animation-delay:2.5s"/>
+    <line x1="90" y1="231" x2="46" y2="158" class="edge" style="animation-delay:3.0s"/>
+    <line x1="90" y1="231" x2="88" y2="252" class="edge" style="animation-delay:3.5s"/>
+    <line x1="90" y1="231" x2="25" y2="145" class="edge" style="animation-delay:4.0s"/>
+    <line x1="90" y1="231" x2="140" y2="211" class="edge" style="animation-delay:0.0s"/>
+    <line x1="771" y1="320" x2="657" y2="287" class="edge" style="animation-delay:0.5s"/>
+    <line x1="468" y1="221" x2="474" y2="283" class="edge" style="animation-delay:1.0s"/>
+    <line x1="468" y1="221" x2="436" y2="287" class="edge" style="animation-delay:1.5s"/>
+    <line x1="46" y1="158" x2="88" y2="252" class="edge" style="animation-delay:2.0s"/>
+    <line x1="46" y1="158" x2="25" y2="145" class="edge" style="animation-delay:2.5s"/>
+    <line x1="46" y1="158" x2="140" y2="211" class="edge" style="animation-delay:3.0s"/>
+    <line x1="88" y1="252" x2="25" y2="145" class="edge" style="animation-delay:3.5s"/>
+    <line x1="88" y1="252" x2="140" y2="211" class="edge" style="animation-delay:4.0s"/>
+    <line x1="474" y1="283" x2="436" y2="287" class="edge" style="animation-delay:0.0s"/>
+    <line x1="657" y1="287" x2="618" y2="206" class="edge" style="animation-delay:0.5s"/>
+    <line x1="970" y1="281" x2="1063" y2="255" class="edge" style="animation-delay:1.0s"/>
+    <line x1="703" y1="98" x2="618" y2="206" class="edge" style="animation-delay:1.5s"/>
+    <line x1="703" y1="98" x2="804" y2="34" class="edge" style="animation-delay:2.0s"/>
+    <line x1="25" y1="145" x2="140" y2="211" class="edge" style="animation-delay:2.5s"/>
+    <line x1="1126" y1="228" x2="1063" y2="255" class="edge" style="animation-delay:3.0s"/>
+    <circle cx="396" cy="64" r="3.4" class="node" style="animation-delay:0.0s"/>
+    <circle cx="775" cy="40" r="2.4" class="node" style="animation-delay:0.6s"/>
+    <circle cx="101" cy="46" r="2.4" class="node" style="animation-delay:1.2s"/>
+    <circle cx="512" cy="269" r="2.4" class="node" style="animation-delay:1.8s"/>
+    <circle cx="164" cy="86" r="3.4" class="node" style="animation-delay:2.4s"/>
+    <circle cx="748" cy="306" r="2.4" class="node" style="animation-delay:3.0s"/>
+    <circle cx="689" cy="139" r="2.4" class="node" style="animation-delay:3.6s"/>
+    <circle cx="1152" cy="32" r="2.4" class="node" style="animation-delay:0.0s"/>
+    <circle cx="187" cy="54" r="3.4" class="node" style="animation-delay:0.6s"/>
+    <circle cx="378" cy="266" r="2.4" class="node" style="animation-delay:1.2s"/>
+    <circle cx="761" cy="131" r="2.4" class="node" style="animation-delay:1.8s"/>
+    <circle cx="655" cy="37" r="2.4" class="node" style="animation-delay:2.4s"/>
+    <circle cx="89" cy="81" r="3.4" class="node" style="animation-delay:3.0s"/>
+    <circle cx="809" cy="148" r="2.4" class="node" style="animation-delay:3.6s"/>
+    <circle cx="629" cy="284" r="2.4" class="node" style="animation-delay:0.0s"/>
+    <circle cx="866" cy="106" r="2.4" class="node" style="animation-delay:0.6s"/>
+    <circle cx="1157" cy="54" r="3.4" class="node" style="animation-delay:1.2s"/>
+    <circle cx="505" cy="248" r="2.4" class="node" style="animation-delay:1.8s"/>
+    <circle cx="65" cy="221" r="2.4" class="node" style="animation-delay:2.4s"/>
+    <circle cx="907" cy="192" r="2.4" class="node" style="animation-delay:3.0s"/>
+    <circle cx="827" cy="199" r="3.4" class="node" style="animation-delay:3.6s"/>
+    <circle cx="693" cy="157" r="2.4" class="node" style="animation-delay:0.0s"/>
+    <circle cx="994" cy="305" r="2.4" class="node" style="animation-delay:0.6s"/>
+    <circle cx="570" cy="220" r="2.4" class="node" style="animation-delay:1.2s"/>
+    <circle cx="90" cy="231" r="3.4" class="node" style="animation-delay:1.8s"/>
+    <circle cx="771" cy="320" r="2.4" class="node" style="animation-delay:2.4s"/>
+    <circle cx="468" cy="221" r="2.4" class="node" style="animation-delay:3.0s"/>
+    <circle cx="46" cy="158" r="2.4" class="node" style="animation-delay:3.6s"/>
+    <circle cx="215" cy="54" r="3.4" class="node" style="animation-delay:0.0s"/>
+    <circle cx="88" cy="252" r="2.4" class="node" style="animation-delay:0.6s"/>
+    <circle cx="474" cy="283" r="2.4" class="node" style="animation-delay:1.2s"/>
+    <circle cx="657" cy="287" r="2.4" class="node" style="animation-delay:1.8s"/>
+    <circle cx="970" cy="281" r="3.4" class="node" style="animation-delay:2.4s"/>
+    <circle cx="436" cy="287" r="2.4" class="node" style="animation-delay:3.0s"/>
+    <circle cx="1131" cy="64" r="2.4" class="node" style="animation-delay:3.6s"/>
+    <circle cx="703" cy="98" r="2.4" class="node" style="animation-delay:0.0s"/>
+    <circle cx="25" cy="145" r="3.4" class="node" style="animation-delay:0.6s"/>
+    <circle cx="1126" cy="228" r="2.4" class="node" style="animation-delay:1.2s"/>
+    <circle cx="618" cy="206" r="2.4" class="node" style="animation-delay:1.8s"/>
+    <circle cx="804" cy="34" r="2.4" class="node" style="animation-delay:2.4s"/>
+    <circle cx="1063" cy="255" r="3.4" class="node" style="animation-delay:3.0s"/>
+    <circle cx="140" cy="211" r="2.4" class="node" style="animation-delay:3.6s"/>
+  </g>
+
+  <text x="64" y="118" class="mark">Karmat Engineering Limited</text>
+  <line x1="64" y1="140" x2="640" y2="140" class="rule"/>
+
+  <defs>
+    <clipPath id="type">
+      <rect x="64" y="158" width="0" height="30">
+        <animate attributeName="width" values="0;384;384;0"
+                 keyTimes="0;.42;.92;1" dur="9s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+  <text x="64" y="181" class="tag" clip-path="url(#type)">AI products, and the models behind them.</text>
+  <rect x="64" y="163" width="2" height="22" class="caret">
+    <animate attributeName="x" values="64;448;448;64"
+             keyTimes="0;.42;.92;1" dur="9s" repeatCount="indefinite"/>
+  </rect>
+
+  <g class="chip" style="animation-delay:1.20s">
+        <rect x="64" y="248" width="207" height="30" rx="15"/>
+        <circle cx="81" cy="263" r="3.2" class="dot"/>
+        <text x="92" y="267" class="chip-name">Optical Diagnostics</text>
+        <text x="241" y="267" class="chip-state">live</text>
+      </g><g class="chip" style="animation-delay:1.42s">
+        <rect x="281" y="248" width="133" height="30" rx="15"/>
+        <circle cx="298" cy="263" r="3.2" class="dot"/>
+        <text x="309" y="267" class="chip-name">Seerah AI</text>
+        <text x="384" y="267" class="chip-state">live</text>
+      </g><g class="chip" style="animation-delay:1.64s">
+        <rect x="425" y="248" width="126" height="30" rx="15"/>
+        <circle cx="442" cy="263" r="3.2" class="dot"/>
+        <text x="453" y="267" class="chip-name">Attender</text>
+        <text x="520" y="267" class="chip-state">live</text>
+      </g><g class="chip" style="animation-delay:1.86s">
+        <rect x="561" y="248" width="129" height="30" rx="15"/>
+        <circle cx="578" cy="263" r="3.2" class="dot"/>
+        <text x="589" y="267" class="chip-name">K-TTS</text>
+        <text x="634" y="267" class="chip-state">training</text>
+      </g>
+
+  <g>
+    <g>
+      <ellipse cx="1010" cy="248" rx="58" ry="13" class="ring" style="animation-delay:0.00s"/>
+      <ellipse cx="1010" cy="248" rx="92" ry="21" class="ring" style="animation-delay:0.55s"/>
+      <ellipse cx="1010" cy="248" rx="126" ry="29" class="ring" style="animation-delay:1.10s"/>
+    </g>
+    <g>
+      <rect x="918" y="144" width="22" height="2.4" rx="1.2" class="streak" style="animation-delay:0.00s"/>
+      <rect x="902" y="155" width="39" height="2.4" rx="1.2" class="streak" style="animation-delay:0.14s"/>
+      <rect x="886" y="166" width="56" height="2.4" rx="1.2" class="streak" style="animation-delay:0.28s"/>
+      <rect x="918" y="177" width="33" height="2.4" rx="1.2" class="streak" style="animation-delay:0.42s"/>
+      <rect x="902" y="188" width="50" height="2.4" rx="1.2" class="streak" style="animation-delay:0.56s"/>
+      <rect x="886" y="199" width="27" height="2.4" rx="1.2" class="streak" style="animation-delay:0.70s"/>
+    </g>
+    <g class="cube" style="transform-origin:1010px 170px">
+      <rect x="959.0" y="105.0" width="110" height="110" rx="20" class="face-top"/>
+      <rect x="956.0" y="109.0" width="112" height="112" rx="20" class="face-side"/>
+      <rect x="952.0" y="112.0" width="116" height="116" rx="22" class="face-front"/>
+      <text x="1010" y="183" class="cube-label c0">AI</text>
+      <text x="1010" y="183" class="cube-label c1">ML</text>
+      <text x="1010" y="183" class="cube-label c2">SWE</text>
+    </g>
+  </g>
+</svg>
